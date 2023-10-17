@@ -1,0 +1,53 @@
+Merhaba Değerli Arkadaşlar,
+NLP dersimizde gerçekleştireceğimiz projemizin detayları aşağıda belirtilmiştir:
+Proje Başlığı: Müşteri İncelemeleri ile Ürün Tavsiyeleri Tahmini
+Proje, toplam 22,641 satır ve 10 sütun değişkeninden oluşan bir veri kümesini içermektedir. Her bir satır, bir müşteri incelemesini içerir ve ek müşteri bilgilerini içerir. Ayrıca, her satır bir müşteri incelemesine karşılık gelir ve aşağıdaki değişkenleri içerir:
+Değişken Bilgileri:
+
+Clothing ID: İnceleme yapılan ürünü belirten tam sayısal bir kategorik değişken.
+Age: İncelemeyi yapan kişinin yaşı, pozitif tam sayısal bir değişken.
+Title: İncelemenin başlığını içeren bir metin değişkeni.
+Review Text: İncelemenin gövdesini içeren bir metin değişkeni.
+Rating: Müşterinin verdiği ürün puanı, 1 En Kötü'den 5 En İyi'ye kadar pozitif sıralı bir tam sayı değişkeni.
+Recommended IND: Ürünü önerip önermediğini belirten ikili bir değişken; 1 öneriyor, 0 önermiyor.
+Positive Feedback Count: İncelemeyi olumlu bulan diğer müşterilerin sayısını belirten pozitif tam sayı değişkeni.
+Division Name: Ürünün yüksek seviye bölümünün kategorik adı.
+Department Name: Ürünün bölümünün kategorik adı.
+Class Name: Ürünün sınıfının kategorik adı.
+
+Bu projenin temel amacı, müşterilerin inceleme metinleri kullanılarak satın aldıkları ürünü tavsiye edip etmediklerini tahmin etmektir. Özellikle, bu projede sadece "Review Text" değişkenini kullanmanız beklenmektedir.
+
+Proje yapısını beş görevde inceleyeceğiz:
+1. Keşifsel Veri Analizi (EDA): Modüllerin içeriğini keşfetmek için verileri içe aktarma işlemlerini gerçekleştireceğiz.
+2. Özellik Seçimi ve Veri Temizleme: Özellik seçimi yapacak ve sütun adlarını yeniden adlandıracağız. Ardından, yalnızca ilgilendiğimiz "Review Text" değişkeni için eksik veri tespiti yapacağız ve diğer değişkenleri kaldırabiliriz.
+3. Metin Madenciliği: Veri madenciliği için hazır hale getirilen veri kümesine nltk kütüphanesinin yeteneklerini kullanarak gürültü giderme ve leksikon normalizasyonu işlemleri uygulayacağız.
+4. Kelime Bulutu (Word Cloud): Kelime tekrarlarının görsel analizi olarak kelime bulutunu uygulayacağız.
+5. Makine Öğrenimi ve Derin Öğrenme ile Duygu Sınıflandırması: Beş farklı algoritma ile model oluşturacak ve performanslarını karşılaştıracağız. Bu sayede, "Review Text" değişkeninden elde edilen bilgileri kullanarak en doğru duygu tahminini yapabilen algoritmayı belirleyeceğiz.
+
+Projedeki Tasklerin Detayları şu şekildedir.
+1. Exploratory Data Analysis
+Import Modules, Load Discover the Data
+2. Feature Selection and Data Cleaning
+Feature Selection and Rename Column Name
+Missing Value Detection
+3. Text Mining
+Tokenization
+Noise Removal
+Lexicon Normalization
+4. WordCloud - Repetition of Words
+Detect Reviews
+Collect Words
+Create Word Cloud
+5. Sentiment Classification with Machine Learning (Bag of Words and TF-IDF) and Deep Learning (BERT)
+Train - Test Split
+Vectorization
+TF-IDF
+Logistic Regression
+Naive Bayes
+Support Vector Machine
+Random Forest
+AdaBoost
+Deep Leraning Model
+BERT Model
+Model Comparison
+Başarılar Dilerim..
